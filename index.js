@@ -37,6 +37,6 @@ app.get('/add', function(req, res){
    connection.query(querytxt);
    res.send('Added ' + req.query.firstName);
 });
-app.listen(3006, function(){
-   console.log('Running on port 3006!')
+app.listen(3001, function(){
+   console.log('Running on port 3001!')
 });
