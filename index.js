@@ -1,13 +1,14 @@
 var express = require('express');
 var app     = express();
 var mysql = require('mysql2');
-var connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'MITPass123',
-  database: 'contacts'
-});
 
+
+var connection = mysql.createConnection({
+host: 'localhost',
+user: 'root',
+password: 'MITPass123',
+database: 'contacts'
+});
 
 // used to serve static files from public directory
 app.use(express.static('public'));
